@@ -1,0 +1,34 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.secao {
+    display: block;
+    width: 70%;
+    height: 100px;
+    background-color: #0A92DD;
+    margin: 10px;
+}
+
+.intro-video {
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+}
