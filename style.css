@@ -1,11 +1,34 @@
-header {
+#header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
 }
 
-header img {
+#header img {
     width: 100%;
-    max-width: 100px;
+    max-width: 120px;
+}
+
+nav {
+    color: #68686A;
+    font-size: 18px;
+    margin: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#nav-bar a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+body {
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .informacoes {
@@ -13,22 +36,160 @@ header img {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-top: 20px;
 }
 
 .secao {
-    display: block;
-    width: 70%;
-    height: 100px;
-    background-color: #0A92DD;
-    margin: 10px;
+    display: flex;
+    align-items:flex-start;
+    width: 100%;
+    max-width: 700px;
+    height: 180px;
+}
+
+.secao p {
+    text-align: justify;
+    margin: 20px;
+    font-size: 16px;
+    color: #68686A;
+}
+
+.secao h1 {
+    font-weight: 300;
+    text-align: justify;
+    margin: 20px 0 0 20px;
+
+}
+
+.secao img {
+    width: 100%;
+    margin-top: 20px;
+    max-width: 30px;
+}
+
+.secao-precos {
+    height: 150px;;
 }
 
 .intro-video {
     display: flex;
     justify-content: center;
+    padding: 50px 0;
+    background-color: #1e98da;
+    
 }
 
 #form {
     display: flex;
     justify-content: center;
+    background-color: #1e98da;
+    padding: 50px 0;
+}
+
+#email {
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#submit {
+    font-weight: bold;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #464646;
+    cursor: pointer;
+}
+
+
+.form-email label, p {
+    font-size: 20px;
+    color: #fff;
+    
+}
+
+.porque-nextcloud {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.porque-nextcloud h1 {
+    font-weight: 600;
+    font-size: 20px;x;
+    color: #464646;
+    padding-top: 20px;
+}
+
+.porque-nextcloud p {
+    font-size: 16px;
+    color: #464646;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.nextcloud {
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.nextcloud img {
+    width: 100%;
+    max-width: 50px;
+}
+
+.controle-div, .produtividade-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+.comunidade-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 28px;
+    padding: 10px;
+}
+
+#nav-footer {
+    text-align: end;
+    font-size: 14px;
+    margin: 0;
+
+}
+
+#nav-footer a {
+    color: #000;
+    padding: 10px;
+}
+
+#nav-footer a:hover {
+    color: blue;
+}
+
+.footer-class {
+    position:static
+}
+
+.footer-class p {
+    padding-right: 10px;
+    text-align: end;
+    font-size: 14px;
+    color: #464646;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 700px) {
+    .porque-nextcloud {
+        display: block;
+    }
 }

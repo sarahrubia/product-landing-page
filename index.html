@@ -1,82 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Landing page do produto</title>
-</head>
+  </head>
 
-<!-- 
-
-User Story #14: My product landing page should have at least one media query.
-
-User Story #15: My product landing page should utilize CSS flexbox at least once. -->
-
-<header id="header">
-    <img src="./assets/imgs/nextcloud-logo.png" alt="nextcloud-logo" id="header-img">
+  <header id="header">
+    <img
+      src="./assets/imgs/nextcloud-logo.png"
+      alt="nextcloud-logo"
+      id="header-img"
+    />
     <nav id="nav-bar">
-        <a href="#produtos" class="nav-link">Produtos</a>
-        <a href="#suporte" class="nav-link">Suporte</a>
-        <a href="#precos" class="nav-link">Preços</a>
+      <a href="#produtos" class="nav-link">Produtos</a>
+      <a href="#funcionamento" class="nav-link">Como funciona?</a>
+      <a href="#precos" class="nav-link">Preços</a>
+    </nav>
+  </header>
 
-
-<!-- User Story #13: The navbar should always be at the top of the viewport. -->
-
-    </nav> 
-</header>
-
-
-<!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
-
-
-<body>
+  <body>
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+      <div class="form-email">
+        <label for="email">Fique atualizado sobre os nossas melhorias!</label>
+        <p>Inscreva-se na nossa newsletter e não perca nada</p>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+          placeholder="Insira seu e-mail"
+        />
+        <input type="submit" name="submit" value="Inscreva-se" id="submit" />
+      </div>
+    </form>
 
     <div class="informacoes">
-        <div class="secao secao-produtos" id="produtos">
-            teste1
-            
+      <div class="secao secao-produtos" id="produtos">
+        <img src="./assets/imgs/produto.svg" alt="logo-produto" />
+        <div>
+          <h1>Produtos: Nextcloud Hub</h1>
+          <p>
+            Compartilhe e colabore em documentos, envie e receba e-mails,
+            gerencie seu calendário e converse por vídeo sem vazamento de dados.
+            Como solução totalmente local, o Nextcloud Hub oferece os benefícios
+            da colaboração online sem os riscos de conformidade e segurança.
+          </p>
         </div>
-    
-        <div class="secao secao-funcionamento" id="como-funciona">
-            teste2
-    
+      </div>
+
+      <div class="secao secao-funcionamento" id="funcionamento">
+        <img src="./assets/imgs/hub.svg" alt="logo-funcionamento" />
+        <div>
+          <h1>Como funciona?</h1>
+          <p>
+            O Hub integra os três principais produtos Nextcloud Files, Talk e
+            Groupware em uma única plataforma, otimizando o fluxo de
+            colaboração. Elimine a mistura confusa de diferentes ferramentas
+            SaaS e os problemas de conformidade, segurança, custo e
+            produtividade que vêm com ela e padronize em uma única solução com o
+            Nextcloud Hub.
+          </p>
         </div>
-        
-        <div class="secao secao-precos" id="precos">
-            teste3
-    
+      </div>
+      <div class="secao secao-precos" id="precos">
+        <img src="./assets/imgs/preco.svg" alt="logo-preco" />
+        <div>
+          <h1>Preços</h1>
+          <p>
+            Hospede com sucesso sua nuvem privada com o Nextcloud Enterprise.
+            Execute uma prova de conceito ou teste gratuitamente com o Nextcloud
+            Enterprise.
+          </p>
         </div>
+      </div>
     </div>
 
     <div class="intro-video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/I8GtygCoNcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/I8GtygCoNcY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
 
-
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <div class="form-email">
-            <label for="email">Fique atualizado sobre os nossas melhorias!</label>
-            <p>Inscreva-se na nossa newsletter e não perca nada</p>
-            <input type="email" name="email" id="email-id" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" placeholder="Insira seu e-mail">
-            <input type="submit" name="submit" value="Inscreva-se" id="submit">
-
+    <div class="porque-nextcloud">
+      <div class="nextcloud controle">
+        <div class="controle-div">
+          <img src="./assets/imgs/controle.svg" alt="icone-controle" />
+          <h1>Controle</h1>
+          <p>
+            Proteja, controle e monitore dados e comunicação em toda a sua
+            empresa. Garantir o cumprimento dos requisitos comerciais e legais.
+            Mantenha seus dados em servidores que você possui, o tempo todo.
+            Nada vaza, nem mesmo metadados.
+          </p>
         </div>
-    </form>
+      </div>
+      <div class="nextcloud produtividade">
+        <div class="produtividade-div">
+          <img
+            src="./assets/imgs/produtividade.svg"
+            alt="icone-produtividade"
+          />
+          <h1>Produtividade</h1>
+          <p>
+            Habilite a produtividade em qualquer plataforma, seja no escritório
+            ou em trânsito, para compartilhar, colaborar e comunicar-se além dos
+            limites organizacionais. O Nextcloud fornece acesso transparente aos
+            dados em qualquer armazenamento.
+          </p>
+        </div>
+      </div>
+      <div class="nextcloud comunidade">
+        <div class="comunidade-div">
+          <img src="./assets/imgs/comunidade.svg" alt="icone-comunidade" />
+          <h1>Comunidade</h1>
+          <p>
+            Desfrute de melhorias constantes de um modelo de desenvolvimento
+            comunitário próspero e transparente, totalmente de código aberto,
+            livre de lockins ou paywalls. Aproveite os benefícios do suporte
+            empresarial quando precisar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 
-    <footer>
-        <nav id="nav-footer">
-            <a href="#">Privacidade</a>
-            <a href="#">Termos</a>
-            <a href="#">Contato</a>
-        </nav>
-
-    </footer>
-    
-</body>
-
-<footer>
-
-</footer>
+  <footer class="footer-class">
+    <nav id="nav-footer">
+      <a href="#">Privacidade</a>
+      <a href="#">Termos</a>
+      <a href="#">Contato</a>
+    </nav>
+    <p>Nextcloud brand used for learning purposes only.</p>
+  </footer>
 </html>
