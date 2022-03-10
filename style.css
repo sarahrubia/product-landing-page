@@ -16,7 +16,7 @@
 nav {
     color: #68686A;
     font-size: 18px;
-    margin: 20px;
+    padding: 20px;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -26,7 +26,7 @@ nav {
 }
 
 body {
-    margin-top: 30px;
+    padding-top: 30px;
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
 }
@@ -36,7 +36,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .secao {
@@ -103,18 +103,16 @@ body {
     cursor: pointer;
 }
 
-
 .form-email label, p {
     font-size: 20px;
     color: #fff;
-    
 }
 
 .porque-nextcloud {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 10px;
+    padding: 10px;
 }
 
 .porque-nextcloud h1 {
@@ -163,13 +161,11 @@ body {
 #nav-footer {
     text-align: end;
     font-size: 14px;
-    margin: 0;
-
+    padding: 0 10px;
 }
 
 #nav-footer a {
     color: #000;
-    padding: 10px;
 }
 
 #nav-footer a:hover {
@@ -177,15 +173,14 @@ body {
 }
 
 .footer-class {
-    position:static
+    position:static;
 }
 
 .footer-class p {
-    padding-right: 10px;
+    padding: 5px 10px;
     text-align: end;
     font-size: 14px;
     color: #464646;
-    margin: 5px 0;
 }
 
 @media screen and (max-width: 700px) {
