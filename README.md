@@ -8,7 +8,7 @@ O objetivo foi criar uma landing page (página estática, em português) de um p
 
 ## Layout do projeto
 
-![Layout do formulário](https://github.com/sarahrubia/formulario-filmes/blob/master/imgs/layout-formulario.png?raw=true)
+![Layout da landing page](https://github.com/sarahrubia/product-landing-page/blob/main/assets/imgs/layout/landingpagelayout.png)
 
 ### Interaja com a página
 
